@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1148,795" sizebox="4,4,4,4" caption="0,0,0,32" mininfo="600,400">
+    <VerticalLayout width="1198" height="780" bkimage="timg.jpg" bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0">
+        <HorizontalLayout width="1148" height="50" maxwidth="1920">
+            <Button name="minbtn" tooltip="最小化" float="true" pos="990,3,0,0" width="50" height="45" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;控件.png&apos; corner=&apos;50,5,0,40&apos;" />
+            <Button name="closebtn" tooltip="关闭" float="true" pos="1097,4,0,0" width="50" height="45" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;控件.png&apos; corner=&apos;0,0,50,40&apos;" />
+            <Button name="maxbtn" tooltip="最大化" float="true" pos="1043,4,0,0" width="50" height="45" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;放大.png&apos; corner=&apos;0,0,0,45&apos; mask=&apos;0xffffffff&apos;" />
+            <Button name="restbtn" tooltip="还原" float="true" pos="809,4,0,0" width="50" height="45" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;放大还原.png&apos; corner=&apos;0,0,0,40&apos;" />
+        </HorizontalLayout>
+        <HorizontalLayout width="700" height="177">
+            <Combo name="typeCombo" text="图片"  float="true" pos="13,27,0,0" width="100" height="50" itemalign="center" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" dropboxsize="0,150">
+                 <ListLabelElement text="图片" selected="true"/>
+                <ListLabelElement text="视频"/>
+            </Combo>
+            <Label name="Labestart" text="start:" float="true" pos="15,104,0,0" width="90" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+            <Edit name="startedit" float="true" pos="117,104,0,0" width="180" height="50" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="Labefinish" text="finish:" float="true" pos="309,104,0,0" width="90" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+            <Edit name="finishedit" float="true" pos="409,104,0,0" width="180" height="50" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Edit name="pathedit" float="true" pos="129,27,0,0" width="460" height="50" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Button name="loadbtn" text="加载" float="true" pos="606,29,0,0" width="83" height="48" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+            <Button name="cutbtn" text="截取" float="true" pos="606,106,0,0" width="83" height="48" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        </HorizontalLayout>
+        <HorizontalLayout width="700" height="458">
+            <List name="wordlist" float="true" pos="25,13,0,0" width="660" height="435" bkcolor="#FFC0C0C0" bkcolor2="#00C0C0C0" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="List/list_header_bg.png" vscrollbar="true" hscrollbar="true">
+                <ListHeader name="domain" bkimage="List/list_header_bg.png">
+                    <ListHeaderItem text="时间" width="326" height="32" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+                    <ListHeaderItem text="文本" width="257" height="35" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="List/list_header_hot.png" pushedimage="List/list_header_pushed.png" sepimage="List/list_header_sep.png" />
+                </ListHeader>
+            </List>
+        </HorizontalLayout>
+        <Button name="changebtn" text="修改" float="true" pos="858,705,0,0" width="150" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button name="srtbtn" text="加载srt" float="true" pos="747,102,0,0" width="80" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button name="outassbtn" text="生成ASS" float="true" pos="849,102,0,0" width="80" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button name="hotassbtn" text="烧录ASS" float="true" pos="950,102,0,0" width="80" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button name="outgifbtn" text="生成gif" float="true" pos="1051,102,0,0" width="80" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button text="加粗" float="true" pos="758,173,0,0" width="60" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button text="斜体" float="true" pos="840,173,0,0" width="60" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button text="字体" float="true" pos="914,173,0,0" width="60" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button text="颜色" float="true" pos="985,173,0,0" width="60" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <Button text="阴影" float="true" pos="1059,173,0,0" width="60" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_down.bmp" pushedimage="button_down.bmp" />
+        <RichEdit />
+		  <RichEdit name="changetxtedit" float="true" pos="737,244,0,0" width="393" height="429" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+    </VerticalLayout>
+</Window>
